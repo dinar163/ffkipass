@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Din2link — Admin Panel</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar">
+    <div class="brand-box">
+      <div class="mark" id="sbMark">D</div>
+      <div><b id="sbName">Din2link</b><small>Admin Panel</small></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      Perubahan tersimpan otomatis dan langsung dipakai oleh
+      <a href="index.html" target="_blank">website utama</a> di browser ini.
+    </div>
+  </aside>
+
+  <!-- ========== MAIN ========== -->
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1 id="ttl">Ringkasan</h1>
+        <small id="sub">Kelola seluruh konten situs dari satu tempat</small>
+      </div>
+      <div class="row">
+        <span class="pill" id="saveState">Tersimpan</span>
+        <a class="btn ghost mini" href="index.html" target="_blank">Lihat Situs</a>
+      </div>
+    </div>
+    <div class="content" id="content"></div>
+  </main>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
